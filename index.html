@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+    <title>Crystals Game</title>
+
+</head>
+<body>
+    <div class="header text-center">
+    <h1> CRYSTAL GAME </h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="gamefont">
+                        You will be given a random number at the start of the game.
+                        There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. 
+                        You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+                        The value of each crystal is hidden from you until you click on it.
+                        Each time when the game starts, the game will change the values of each crystal.
+                </p>
+            </div> 
+               <div class="col-sm-6 text-center">
+
+                    <h2> MAGIC NUMBER </h2>
+                    <h2 id="guess-number"> </h2>
+                </div>
+
+              </div> 
+            
+              <div class="row">
+                <div class="col-xs-6 col-md-3 col-lg-3 text-center">
+                    <img class="crystalimg img-responsive" id="crystal1" src="assets/images/crystal1.png" alt="Crystal1"/>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3 text-center">
+                        <img class="crystalimg img-responsive" id="crystal2" src="assets/images/crystal2.png" alt="Crystal2"/>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3 text-center">
+                        <img class="crystalimg img-responsive" id="crystal3" src="assets/images/crystal3.png" alt="Crystal3"/>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3 text-center">
+                        <img class="crystalimg img-responsive" id="crystal4" src="assets/images/crystal4.png" alt="Crystal4"/>
+                </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-lg-4">
+                        <h3> TOTAL SCORE:</h3>
+                        <h3 id="totalScore"> </h3>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h3 id="winOrLose"> </h3>
+                        <button type="button" class="btn btn-light btn-lg"> PLAY AGAIN</button>  
+                    </div>
+
+                    <div class="col-lg-4">
+                        <p class="score"> WINS: <span id="wins"> </p>
+                        <p class="score"> LOSSES: <span id="losses"> </span></p>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+        
+
+
+
+        </div>
+
+       
+
+    </div>
+
+</body>
+</html>
